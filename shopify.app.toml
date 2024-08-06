@@ -1,3 +1,27 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "9ec9f34a7bbfedb559e9e445e8bef0d1"
+name = "boa-ideas-homeassignment-m"
+application_url = "https://ate-all-benchmark-monaco.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "home-assignment83.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "read_customers"
+
+[auth]
+redirect_urls = [
+  "https://ate-all-benchmark-monaco.trycloudflare.com/auth/callback",
+  "https://ate-all-benchmark-monaco.trycloudflare.com/auth/shopify/callback",
+  "https://ate-all-benchmark-monaco.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false

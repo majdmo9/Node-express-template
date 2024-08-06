@@ -17,3 +17,11 @@ model Session {
   accessToken String
   userId      BigInt?
 }
+
+model SavedCart {
+  id              Int    @id @default(autoincrement())
+  customerId      String @unique
+  productVariants Json
+
+  @@index([customerId], name: "customerId_index")
+}

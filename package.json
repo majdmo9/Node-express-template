@@ -1,23 +1,29 @@
 {
-  "name": "boa-ideas-home-assignment",
-  "version": "1.0.0",
-  "main": "web/index.js",
-  "license": "UNLICENSED",
-  "scripts": {
-    "shopify": "shopify",
-    "build": "shopify app build",
-    "dev": "shopify app dev",
-    "info": "shopify app info",
-    "generate": "shopify app generate",
-    "deploy": "shopify app deploy"
-  },
-  "dependencies": {
-    "@shopify/app": "^3.50.0",
-    "@shopify/cli": "^3.50.0"
-  },
-  "author": "BOA Ideas",
-  "devDependencies": {
-    "eslint": "^8.52.0",
-    "eslint-plugin-react": "^7.33.2"
-  }
+	"name": "boa-ideas-home-task-MM",
+	"version": "1.0.0",
+	"main": "web/index.js",
+	"license": "UNLICENSED",
+	"scripts": {
+		"shopify": "shopify",
+		"build": "shopify app build",
+		"dev": "shopify app dev",
+		"info": "shopify app info",
+		"generate": "shopify app generate",
+		"deploy": "shopify app deploy"
+	},
+	"dependencies": {
+		"@shopify/app": "^3.58.2",
+		"@shopify/cli": "^3.65.0",
+		"@shopify/ui-extensions": "2023.10.0",
+		"@shopify/ui-extensions-react": "2023.10.0",
+		"react": "^18.3.1"
+	},
+	"author": "BOA Ideas",
+	"devDependencies": {
+		"eslint": "^8.52.0",
+		"eslint-plugin-react": "^7.33.2"
+	},
+	"overrides": {
+		"@types/react": "17.0.30"
+	}
 }
